@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Resume Builder</h2>
+        <form action="/resume" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <input type="text" name="summary" placeholder="Professional Summary" required>
+            <textarea name="education" placeholder="Education (Degree, Year, College)" required></textarea>
+            <textarea name="experience" placeholder="Work Experience (Company, Role, Duration)" required></textarea>
+            <textarea name="skills" placeholder="Skills (comma separated)" required></textarea>
+            <button type="submit">Generate Resume</button>
+        </form>
+    </div>
+</body>
+</html>
