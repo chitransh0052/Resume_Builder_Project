@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Resume Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- custom css -->
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+        <nav class = "navbar bg-white">
+            <div class="container">
+                <div class = "navbar-content">
+                    <div class = "brand-and-toggler">
+                        <a href = "index.html" class = "navbar-brand">
+                            <img src = "assets/images/curriculum-vitae.png" alt = "" class = "navbar-brand-icon">
+                            <span class = "navbar-brand-text">build <span>resume.</span>
+                        </a>
+                        <button type = "button" class = "navbar-toggler-btn">
+                            <div class = "bars">
+                                <div class = "bar"></div>
+                                <div class = "bar"></div>
+                                <div class = "bar"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        
+
+        <section id = "preview-sc" class = "print_area">
+            <div class = "container">
+                <div class = "preview-cnt">
+                    <div class = "preview-cnt-l bg-green text-white">
+                        <div class = "preview-blk">
+                            <div class = "preview-image">
+                                <img src = "" alt = "" id = "image_dsp"> 
+                            </div>
+                            <div class = "preview-item preview-item-name">
+                                <span class = "preview-item-val fw-6" id = "fullname_dsp"></span>
+                            </div>
+                            <div class = "preview-item">
+                                <span class = "preview-item-val text-uppercase fw-6 ls-1" id = "designation_dsp"></span>
+                            </div>
+                        </div>
+
+                        <div class = "preview-blk">
+                            <div class = "preview-blk-title">
+                                <h3>about</h3>
+                            </div>
+                            <div class = "preview-blk-list">
+                                <div class = "preview-item">
+                                    <span class = "preview-item-val" id = "phoneno_dsp"></span>
+                                </div>
+                                <div class = "preview-item">
+                                    <span class = "preview-item-val" id = "email_dsp"></span>
+                                </div>
+                                <div class = "preview-item">
+                                    <span class = "preview-item-val" id = "address_dsp"></span>
+                                </div>
+                                <div class = "preview-item">
+                                    <span class = "preview-item-val" id = "summary_dsp"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "preview-blk">
+                            <div class = "preview-blk-title">
+                                <h3>skills</h3>
+                            </div>
+                            <div class = "skills-items preview-blk-list" id = "skills_dsp">
+                                <!-- skills list here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "preview-cnt-r bg-white">
+                        <div class = "preview-blk">
+                            <div class = "preview-blk-title">
+                                <h3>Achievements</h3>
+                            </div>
+                            <div class = "achievements-items preview-blk-list" id = "achievements_dsp"></div>
+                        </div>
+
+                        <div class = "preview-blk">
+                            <div class = "preview-blk-title">
+                                <h3>educations</h3>
+                            </div>
+                            <div class = "educations-items preview-blk-list" id = "educations_dsp"></div>
+                        </div>
+
+                        <div class = "preview-blk">
+                            <div class = "preview-blk-title">
+                                <h3>experiences</h3>
+                            </div>
+                            <div class = "experiences-items preview-blk-list" id = "experiences_dsp"></div>
+                        </div>
+
+                        <div class = "preview-blk">
+                            <div class = "preview-blk-title">
+                                <h3>projects</h3>
+                            </div>
+                            <div class = "projects-items preview-blk-list" id = "projects_dsp"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "print-btn-sc">
+            <div class = "container">
+                <button type = "button" class = "print-btn btn btn-primary" onclick="printCV()">Print CV</button>
+            </div>
+        </section>
+
+
+        
+
+        <!-- jquery cdn -->
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <!-- jquery repeater cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.repeater/1.2.1/jquery.repeater.js" integrity="sha512-bZAXvpVfp1+9AUHQzekEZaXclsgSlAeEnMJ6LfFAvjqYUVZfcuVXeQoN5LhD7Uw0Jy4NCY9q3kbdEXbwhZUmUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- custom js -->
+        <script src = "assets/js/script.js"></script>
+        <!-- app js -->
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
